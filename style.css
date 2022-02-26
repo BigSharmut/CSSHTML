@@ -2,19 +2,16 @@ body {
     font-family: PT Sans;
 }
 .container1 {
-    /* display: flex;
-    justify-content: stretch;
-    gap: 50px; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: 2fr repeat(4, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px; */
-
 }
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;    
+
 }
 .my_header {
     width: 100%;
@@ -55,6 +52,33 @@ li {
     justify-content: center;
     align-items: center;
 }
+
+.floating-button{
+    text-decoration: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 55px;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color:#000000;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+.floating-button:hover{
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-7px)
+}
+
 
 li:hover {
     background-color: rgb(124, 120, 120);
@@ -185,4 +209,21 @@ h2 {
     .buttons {
         opacity: 1;
     }
+}
+
+.block{
+
+    margin: auto;
+    padding: 5px;
+    
+}
+.block2{
+    border-width: 2px;
+    border-color:white;
+    border-style: solid;
+}
+.block1{
+    border-width: 2px;
+    border-color:white;
+    border-style: solid;
 }
